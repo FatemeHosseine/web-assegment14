@@ -1,0 +1,51 @@
+<html onload="winw()">
+
+<head onload="winl()">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+</head>
+
+<body onload="fsc()">
+    <div class="nam"> Spinner Game</div>
+    <div id="ref" onclick="ply()">&nbsp;Refresh&nbsp;</div><br>
+    <br> <br> <br> <br>
+    <div id="scrd">
+
+
+        <div id="sc1">
+            Score:<input value="00" type="text" id="scr" readonly> <br> </div>
+
+
+        <div id="sc2">
+            Spin-Left:<input value="5" type="text" id="chnl" readonly> <br> </div>
+
+        <div id="sc3">
+            Target:<input type="text" id="scrf" readonly> <br> </div>
+
+
+    </div>
+    <br> <br> <br>
+    <div id="pro">
+        <div id="prog"></div>
+    </div> <br>
+
+
+
+
+
+    <img id="spin" onclick="startSpin()" src="a.jpg" alt="fidget spinner"
+        height="226" width="207">
+
+
+
+
+
+
+
+
+    <div id="yl">YOU LOOSE</div><br>
+    <div id="pl" onclick="ply()">PLAY AGIAN</div><br>
+    <div id="yw">YOU WIN</div>
+    <script src="script.js" ></script>
+</body>
+
+</html>

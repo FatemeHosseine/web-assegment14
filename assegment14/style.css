@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html {
+    background: linear-gradient(90deg, #fff000 0%, #ff0000 100%);
+}
+
+body {
+    background: linear-gradient(90deg, #fff000 0%, #ff0000 100%);
+    background-repeat: no-repeat;
+
+}
+
+#yl,
+#yw,
+#pl {
+    color: green;
+    font-family: Raleway;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    background: #FF3D00;
+}
+
+#pl {
+    color: red;
+    background: #7CB342;
+}
+
+#spin {
+    transform-origin: center;
+    z-index: 2;
+    position: absolute;
+    top: 300px;
+    left: 8px;
+    transform: translateZ(0px) rotate(-0.533286rad);
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+input {
+    border: 0;
+    font-family: Raleway;
+    background: transparent;
+    width: 150px;
+    font-size: 35px;
+    color: red;
+}
+
+.cne {
+    background: green;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.cne::before {
+
+    content: '' ;
+ background :red;
+    margin: auto;
+    width: 540px;
+    height: 540px;
+    border-radius: 50%
+}
+
+/* -webkit-transform: rotate(3109deg);
+   -moz-transform: rotate(3109deg);
+   -o-transform: rotate(3109deg);
+   transform: rotate(3109deg);
+  /*background:url("http://pngimg.com/uploads/spinner/spinner_PNG54.png");
+  */
+
+
+#sc1,
+#sc2,
+#sc3 {
+    font-family: Raleway;
+    font-size: 35px;
+    background: #004D40;
+    width: 100%;
+    box-shadow: 0px 10px 0px #aaa;
+}
+
+#pro {
+    background: #991;
+    width: 80%;
+    height: 25px;
+    margin-left: 78px;
+
+}
+
+#prog {
+    background: #f80;
+    width: 0;
+    height: 100%;
+    transition: .5s;
+
+}
+
+#ref {
+    background: #333;
+    color: white;
+    font-family: cursive;
+    position: absolute;
+    top: 55px;
+    left: 13px;
+    transition: 1.5s;
+}
+
+#ref:hover {
+    background: #D32F2F;
+}
+
+#sc1:active,
+#sc2:active,
+#sc3:active {
+    transform: translateY(1px);
+    box-shadow: 0px 7px 0px #aaa;
+
+}
+
+.nospin {
+    -webkit-animation: none 2s;
+    -moz-animation: none 2s;
+    -o-animation: none 2s;
+    animation: none 2s;
+}
+
+@-webkit-keyframes none {}
+
+@-moz-keyframes none {}
+
+@-o-keyframes none {}
+
+@keyframes none {}
+
+.nam {
+    text-align: center;
+    font-family: Nunito;
+    position: fixed;
+    font-size: 35px;
+    margin-left: 249px;
+}
+
+.spinAround {
+    -webkit-animation: spin 6.6s;
+    -moz-animation: spin 6.6s;
+    -o-animation: spin 6.6s;
+    animation: spin 6.6s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    90% {
+        -webkit-transform: rotate(3110deg);
+        transform: rotate(3110deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(3108deg);
+        transform: rotate(3108deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    90% {
+        -moz-transform: rotate(3110deg);
+        transform: rotate(3110deg)
+    }
+
+    95% {
+        -moz-transform: rotate(3108deg);
+        transform: rotate(3108deg)
+    }
+
+    100% {
+        -moz-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    90% {
+        -o-transform: rotate(3110deg);
+        transform: rotate(3110deg)
+    }
+
+    95% {
+        -o-transform: rotate(3108deg);
+        transform: rotate(3108deg)
+    }
+
+    100% {
+        -o-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    90% {
+        -webkit-transform: rotate(3110deg);
+        -moz-transform: rotate(3110deg);
+        -o-transform: rotate(3110deg);
+        transform: rotate(3110deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(3108deg);
+        -moz-transform: rotate(3108deg);
+        -o-transform: rotate(3108deg);
+        transform: rotate(3108deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(3109deg);
+        -moz-transform: rotate(3109deg);
+        -o-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+}
